@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D369C7FF29B6492A007AACFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C7FE29B6492A007AACFD /* AppDelegate.swift */; };
+		D369C80129B6492A007AACFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C80029B6492A007AACFD /* SceneDelegate.swift */; };
+		D369C80829B6492B007AACFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D369C80729B6492B007AACFD /* Assets.xcassets */; };
+		D369C80B29B6492B007AACFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D369C80929B6492B007AACFD /* LaunchScreen.storyboard */; };
+		D369C81629B6492B007AACFD /* AdForLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C81529B6492B007AACFD /* AdForLifeTests.swift */; };
+		D369C82029B6492B007AACFD /* AdForLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C81F29B6492B007AACFD /* AdForLifeUITests.swift */; };
+		D369C82229B6492B007AACFD /* AdForLifeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C82129B6492B007AACFD /* AdForLifeUITestsLaunchTests.swift */; };
+		D369C83129B64BFE007AACFD /* AdsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C83029B64BFE007AACFD /* AdsListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D369C81229B6492B007AACFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D369C7F329B6492A007AACFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D369C7FA29B6492A007AACFD;
+			remoteInfo = AdForLife;
+		};
+		D369C81C29B6492B007AACFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D369C7F329B6492A007AACFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D369C7FA29B6492A007AACFD;
+			remoteInfo = AdForLife;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D369C7FB29B6492A007AACFD /* AdForLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdForLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D369C7FE29B6492A007AACFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D369C80029B6492A007AACFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D369C80729B6492B007AACFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D369C80A29B6492B007AACFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D369C80C29B6492B007AACFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D369C81129B6492B007AACFD /* AdForLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdForLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D369C81529B6492B007AACFD /* AdForLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdForLifeTests.swift; sourceTree = "<group>"; };
+		D369C81B29B6492B007AACFD /* AdForLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdForLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D369C81F29B6492B007AACFD /* AdForLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdForLifeUITests.swift; sourceTree = "<group>"; };
+		D369C82129B6492B007AACFD /* AdForLifeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdForLifeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D369C83029B64BFE007AACFD /* AdsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsListViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D369C7F829B6492A007AACFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D369C80E29B6492B007AACFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D369C81829B6492B007AACFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D369C7F229B6492A007AACFD = {
+			isa = PBXGroup;
+			children = (
+				D369C7FD29B6492A007AACFD /* AdForLife */,
+				D369C81429B6492B007AACFD /* AdForLifeTests */,
+				D369C81E29B6492B007AACFD /* AdForLifeUITests */,
+				D369C7FC29B6492A007AACFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D369C7FC29B6492A007AACFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D369C7FB29B6492A007AACFD /* AdForLife.app */,
+				D369C81129B6492B007AACFD /* AdForLifeTests.xctest */,
+				D369C81B29B6492B007AACFD /* AdForLifeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D369C7FD29B6492A007AACFD /* AdForLife */ = {
+			isa = PBXGroup;
+			children = (
+				D369C7FE29B6492A007AACFD /* AppDelegate.swift */,
+				D369C80029B6492A007AACFD /* SceneDelegate.swift */,
+				D369C82E29B64BD7007AACFD /* Ads */,
+				D369C80729B6492B007AACFD /* Assets.xcassets */,
+				D369C80929B6492B007AACFD /* LaunchScreen.storyboard */,
+				D369C80C29B6492B007AACFD /* Info.plist */,
+			);
+			path = AdForLife;
+			sourceTree = "<group>";
+		};
+		D369C81429B6492B007AACFD /* AdForLifeTests */ = {
+			isa = PBXGroup;
+			children = (
+				D369C81529B6492B007AACFD /* AdForLifeTests.swift */,
+			);
+			path = AdForLifeTests;
+			sourceTree = "<group>";
+		};
+		D369C81E29B6492B007AACFD /* AdForLifeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D369C81F29B6492B007AACFD /* AdForLifeUITests.swift */,
+				D369C82129B6492B007AACFD /* AdForLifeUITestsLaunchTests.swift */,
+			);
+			path = AdForLifeUITests;
+			sourceTree = "<group>";
+		};
+		D369C82E29B64BD7007AACFD /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				D369C82F29B64BE2007AACFD /* AdsList */,
+			);
+			path = Ads;
+			sourceTree = "<group>";
+		};
+		D369C82F29B64BE2007AACFD /* AdsList */ = {
+			isa = PBXGroup;
+			children = (
+				D369C83029B64BFE007AACFD /* AdsListViewController.swift */,
+			);
+			path = AdsList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D369C7FA29B6492A007AACFD /* AdForLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D369C82529B6492B007AACFD /* Build configuration list for PBXNativeTarget "AdForLife" */;
+			buildPhases = (
+				D369C7F729B6492A007AACFD /* Sources */,
+				D369C7F829B6492A007AACFD /* Frameworks */,
+				D369C7F929B6492A007AACFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdForLife;
+			productName = AdForLife;
+			productReference = D369C7FB29B6492A007AACFD /* AdForLife.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D369C81029B6492B007AACFD /* AdForLifeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D369C82829B6492B007AACFD /* Build configuration list for PBXNativeTarget "AdForLifeTests" */;
+			buildPhases = (
+				D369C80D29B6492B007AACFD /* Sources */,
+				D369C80E29B6492B007AACFD /* Frameworks */,
+				D369C80F29B6492B007AACFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D369C81329B6492B007AACFD /* PBXTargetDependency */,
+			);
+			name = AdForLifeTests;
+			productName = AdForLifeTests;
+			productReference = D369C81129B6492B007AACFD /* AdForLifeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D369C81A29B6492B007AACFD /* AdForLifeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D369C82B29B6492B007AACFD /* Build configuration list for PBXNativeTarget "AdForLifeUITests" */;
+			buildPhases = (
+				D369C81729B6492B007AACFD /* Sources */,
+				D369C81829B6492B007AACFD /* Frameworks */,
+				D369C81929B6492B007AACFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D369C81D29B6492B007AACFD /* PBXTargetDependency */,
+			);
+			name = AdForLifeUITests;
+			productName = AdForLifeUITests;
+			productReference = D369C81B29B6492B007AACFD /* AdForLifeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D369C7F329B6492A007AACFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D369C7FA29B6492A007AACFD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					D369C81029B6492B007AACFD = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D369C7FA29B6492A007AACFD;
+					};
+					D369C81A29B6492B007AACFD = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D369C7FA29B6492A007AACFD;
+					};
+				};
+			};
+			buildConfigurationList = D369C7F629B6492A007AACFD /* Build configuration list for PBXProject "AdForLife" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D369C7F229B6492A007AACFD;
+			productRefGroup = D369C7FC29B6492A007AACFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D369C7FA29B6492A007AACFD /* AdForLife */,
+				D369C81029B6492B007AACFD /* AdForLifeTests */,
+				D369C81A29B6492B007AACFD /* AdForLifeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D369C7F929B6492A007AACFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D369C80B29B6492B007AACFD /* LaunchScreen.storyboard in Resources */,
+				D369C80829B6492B007AACFD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D369C80F29B6492B007AACFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D369C81929B6492B007AACFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D369C7F729B6492A007AACFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D369C83129B64BFE007AACFD /* AdsListViewController.swift in Sources */,
+				D369C7FF29B6492A007AACFD /* AppDelegate.swift in Sources */,
+				D369C80129B6492A007AACFD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D369C80D29B6492B007AACFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D369C81629B6492B007AACFD /* AdForLifeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D369C81729B6492B007AACFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D369C82029B6492B007AACFD /* AdForLifeUITests.swift in Sources */,
+				D369C82229B6492B007AACFD /* AdForLifeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D369C81329B6492B007AACFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D369C7FA29B6492A007AACFD /* AdForLife */;
+			targetProxy = D369C81229B6492B007AACFD /* PBXContainerItemProxy */;
+		};
+		D369C81D29B6492B007AACFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D369C7FA29B6492A007AACFD /* AdForLife */;
+			targetProxy = D369C81C29B6492B007AACFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D369C80929B6492B007AACFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D369C80A29B6492B007AACFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D369C82329B6492B007AACFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D369C82429B6492B007AACFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D369C82629B6492B007AACFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YPDG6KKLRL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AdForLife/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lbc.AdForLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D369C82729B6492B007AACFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YPDG6KKLRL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AdForLife/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lbc.AdForLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D369C82929B6492B007AACFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YPDG6KKLRL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lbc.AdForLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdForLife.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AdForLife";
+			};
+			name = Debug;
+		};
+		D369C82A29B6492B007AACFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YPDG6KKLRL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lbc.AdForLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdForLife.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AdForLife";
+			};
+			name = Release;
+		};
+		D369C82C29B6492B007AACFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YPDG6KKLRL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lbc.AdForLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdForLife;
+			};
+			name = Debug;
+		};
+		D369C82D29B6492B007AACFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YPDG6KKLRL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lbc.AdForLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdForLife;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D369C7F629B6492A007AACFD /* Build configuration list for PBXProject "AdForLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D369C82329B6492B007AACFD /* Debug */,
+				D369C82429B6492B007AACFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D369C82529B6492B007AACFD /* Build configuration list for PBXNativeTarget "AdForLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D369C82629B6492B007AACFD /* Debug */,
+				D369C82729B6492B007AACFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D369C82829B6492B007AACFD /* Build configuration list for PBXNativeTarget "AdForLifeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D369C82929B6492B007AACFD /* Debug */,
+				D369C82A29B6492B007AACFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D369C82B29B6492B007AACFD /* Build configuration list for PBXNativeTarget "AdForLifeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D369C82C29B6492B007AACFD /* Debug */,
+				D369C82D29B6492B007AACFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D369C7F329B6492A007AACFD /* Project object */;
+}
