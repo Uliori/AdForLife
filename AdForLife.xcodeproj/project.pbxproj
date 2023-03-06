@@ -22,6 +22,9 @@
 		D369C83F29B65449007AACFD /* GetClassifiedAdsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C83E29B65449007AACFD /* GetClassifiedAdsService.swift */; };
 		D369C84129B65588007AACFD /* DataProxyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C84029B65588007AACFD /* DataProxyError.swift */; };
 		D369C84329B65663007AACFD /* GetCategoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C84229B65663007AACFD /* GetCategoriesService.swift */; };
+		D369C84629B65DB1007AACFD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C84529B65DB1007AACFD /* AppCoordinator.swift */; };
+		D369C84829B65DFA007AACFD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C84729B65DFA007AACFD /* Coordinator.swift */; };
+		D369C84A29B65EEE007AACFD /* AdsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C84929B65EEE007AACFD /* AdsCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		D369C83E29B65449007AACFD /* GetClassifiedAdsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetClassifiedAdsService.swift; sourceTree = "<group>"; };
 		D369C84029B65588007AACFD /* DataProxyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProxyError.swift; sourceTree = "<group>"; };
 		D369C84229B65663007AACFD /* GetCategoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCategoriesService.swift; sourceTree = "<group>"; };
+		D369C84529B65DB1007AACFD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		D369C84729B65DFA007AACFD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		D369C84929B65EEE007AACFD /* AdsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 			children = (
 				D369C7FE29B6492A007AACFD /* AppDelegate.swift */,
 				D369C80029B6492A007AACFD /* SceneDelegate.swift */,
+				D369C84429B65DA0007AACFD /* Coordinators */,
 				D369C83229B64ED3007AACFD /* DataProxy */,
 				D369C82E29B64BD7007AACFD /* Ads */,
 				D369C80729B6492B007AACFD /* Assets.xcassets */,
@@ -143,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				D369C82F29B64BE2007AACFD /* AdsList */,
+				D369C84B29B661DB007AACFD /* AdDetails */,
 			);
 			path = Ads;
 			sourceTree = "<group>";
@@ -191,6 +199,23 @@
 				D369C84229B65663007AACFD /* GetCategoriesService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		D369C84429B65DA0007AACFD /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				D369C84729B65DFA007AACFD /* Coordinator.swift */,
+				D369C84529B65DB1007AACFD /* AppCoordinator.swift */,
+				D369C84929B65EEE007AACFD /* AdsCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		D369C84B29B661DB007AACFD /* AdDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AdDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +348,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D369C84629B65DB1007AACFD /* AppCoordinator.swift in Sources */,
+				D369C84A29B65EEE007AACFD /* AdsCoordinator.swift in Sources */,
 				D369C83429B64FDD007AACFD /* NetworkHelper.swift in Sources */,
 				D369C83729B651C5007AACFD /* Configuration.swift in Sources */,
 				D369C83A29B65271007AACFD /* ClassifiedAdModel.swift in Sources */,
@@ -330,6 +357,7 @@
 				D369C84329B65663007AACFD /* GetCategoriesService.swift in Sources */,
 				D369C83C29B6527B007AACFD /* CategoryModel.swift in Sources */,
 				D369C83F29B65449007AACFD /* GetClassifiedAdsService.swift in Sources */,
+				D369C84829B65DFA007AACFD /* Coordinator.swift in Sources */,
 				D369C84129B65588007AACFD /* DataProxyError.swift in Sources */,
 				D369C7FF29B6492A007AACFD /* AppDelegate.swift in Sources */,
 				D369C80129B6492A007AACFD /* SceneDelegate.swift in Sources */,
