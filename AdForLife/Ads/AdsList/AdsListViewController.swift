@@ -14,6 +14,16 @@ class AdsListViewController: UIViewController {
 
         // Do any additional setup after loading the view.
       view.backgroundColor = .red
+      
+      Task {
+        do {
+          print(try await GetCategoriesService().fetch())
+          print(try await GetClassifiedAdsService().fetch())
+        } catch {
+          print(error)
+        }
+      }
+      
     }
     
 

@@ -15,6 +15,13 @@
 		D369C82029B6492B007AACFD /* AdForLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C81F29B6492B007AACFD /* AdForLifeUITests.swift */; };
 		D369C82229B6492B007AACFD /* AdForLifeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C82129B6492B007AACFD /* AdForLifeUITestsLaunchTests.swift */; };
 		D369C83129B64BFE007AACFD /* AdsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C83029B64BFE007AACFD /* AdsListViewController.swift */; };
+		D369C83429B64FDD007AACFD /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C83329B64FDD007AACFD /* NetworkHelper.swift */; };
+		D369C83729B651C5007AACFD /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C83629B651C5007AACFD /* Configuration.swift */; };
+		D369C83A29B65271007AACFD /* ClassifiedAdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C83929B65271007AACFD /* ClassifiedAdModel.swift */; };
+		D369C83C29B6527B007AACFD /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C83B29B6527B007AACFD /* CategoryModel.swift */; };
+		D369C83F29B65449007AACFD /* GetClassifiedAdsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C83E29B65449007AACFD /* GetClassifiedAdsService.swift */; };
+		D369C84129B65588007AACFD /* DataProxyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C84029B65588007AACFD /* DataProxyError.swift */; };
+		D369C84329B65663007AACFD /* GetCategoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C84229B65663007AACFD /* GetCategoriesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		D369C81F29B6492B007AACFD /* AdForLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdForLifeUITests.swift; sourceTree = "<group>"; };
 		D369C82129B6492B007AACFD /* AdForLifeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdForLifeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D369C83029B64BFE007AACFD /* AdsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsListViewController.swift; sourceTree = "<group>"; };
+		D369C83329B64FDD007AACFD /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		D369C83629B651C5007AACFD /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		D369C83929B65271007AACFD /* ClassifiedAdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAdModel.swift; sourceTree = "<group>"; };
+		D369C83B29B6527B007AACFD /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		D369C83E29B65449007AACFD /* GetClassifiedAdsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetClassifiedAdsService.swift; sourceTree = "<group>"; };
+		D369C84029B65588007AACFD /* DataProxyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProxyError.swift; sourceTree = "<group>"; };
+		D369C84229B65663007AACFD /* GetCategoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCategoriesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,7 @@
 			children = (
 				D369C7FE29B6492A007AACFD /* AppDelegate.swift */,
 				D369C80029B6492A007AACFD /* SceneDelegate.swift */,
+				D369C83229B64ED3007AACFD /* DataProxy */,
 				D369C82E29B64BD7007AACFD /* Ads */,
 				D369C80729B6492B007AACFD /* Assets.xcassets */,
 				D369C80929B6492B007AACFD /* LaunchScreen.storyboard */,
@@ -138,6 +153,44 @@
 				D369C83029B64BFE007AACFD /* AdsListViewController.swift */,
 			);
 			path = AdsList;
+			sourceTree = "<group>";
+		};
+		D369C83229B64ED3007AACFD /* DataProxy */ = {
+			isa = PBXGroup;
+			children = (
+				D369C83529B651B3007AACFD /* Common */,
+				D369C83829B6525C007AACFD /* Models */,
+				D369C83D29B6541A007AACFD /* Services */,
+			);
+			path = DataProxy;
+			sourceTree = "<group>";
+		};
+		D369C83529B651B3007AACFD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D369C83629B651C5007AACFD /* Configuration.swift */,
+				D369C83329B64FDD007AACFD /* NetworkHelper.swift */,
+				D369C84029B65588007AACFD /* DataProxyError.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D369C83829B6525C007AACFD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D369C83929B65271007AACFD /* ClassifiedAdModel.swift */,
+				D369C83B29B6527B007AACFD /* CategoryModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D369C83D29B6541A007AACFD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D369C83E29B65449007AACFD /* GetClassifiedAdsService.swift */,
+				D369C84229B65663007AACFD /* GetCategoriesService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +323,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D369C83429B64FDD007AACFD /* NetworkHelper.swift in Sources */,
+				D369C83729B651C5007AACFD /* Configuration.swift in Sources */,
+				D369C83A29B65271007AACFD /* ClassifiedAdModel.swift in Sources */,
 				D369C83129B64BFE007AACFD /* AdsListViewController.swift in Sources */,
+				D369C84329B65663007AACFD /* GetCategoriesService.swift in Sources */,
+				D369C83C29B6527B007AACFD /* CategoryModel.swift in Sources */,
+				D369C83F29B65449007AACFD /* GetClassifiedAdsService.swift in Sources */,
+				D369C84129B65588007AACFD /* DataProxyError.swift in Sources */,
 				D369C7FF29B6492A007AACFD /* AppDelegate.swift in Sources */,
 				D369C80129B6492A007AACFD /* SceneDelegate.swift in Sources */,
 			);
