@@ -8,6 +8,6 @@
 import Foundation
 
 struct AdCategoryEntity: Equatable, Hashable, Decodable {
-    var id: Int
-    var name: String
+  var id: Int
+  var name: String
 }

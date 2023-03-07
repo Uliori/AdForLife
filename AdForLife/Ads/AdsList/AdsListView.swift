@@ -10,14 +10,20 @@ import UIKit
 
 final class AdsListView: UIView {
   
+  private enum Constants {
+    enum Colors {
+      static let loading = UIColor(named: "adLoading")
+    }
+  }
+  
   let activityIndicationView = {
     let activityIndicator = UIActivityIndicatorView(style: .medium)
-    activityIndicator.color = .orange
+    activityIndicator.color = Constants.Colors.loading
     return activityIndicator
   }()
   
   let tableView: UITableView = {
-    let tableView = UITableView()
+    let tableView = UITableView(frame: .zero, style: .plain)
     tableView.backgroundColor = .clear
     tableView.translatesAutoresizingMaskIntoConstraints = false
     tableView.register(AdTableViewCell.self,
@@ -51,7 +57,7 @@ final class AdsListView: UIView {
   }
   
   private func addSubviews() {
-    backgroundColor = .white
+    backgroundColor = .systemBackground
     let subviews = [tableView, activityIndicationView]
     
     subviews.forEach {

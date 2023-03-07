@@ -12,7 +12,7 @@ import UIKit
 //          Ad List and Ad details, one Coordinator is enough, so no extra methods/logic is needed
 
 protocol AdsCoordinatorDelegate {
-  func didSelectAd(_ ad: String)
+  func didSelectAd(_ ad: ClassifiedAdModel)
 }
 
 class AdsCoordinator {
@@ -34,6 +34,7 @@ extension AdsCoordinator: Coordinator {
   
   func start() {
     let adsListViewController = AdsListViewController()
+    adsListViewController.delegate = self
     rootViewController?.setViewControllers([adsListViewController], animated: false)
   }
 }
@@ -41,6 +42,7 @@ extension AdsCoordinator: Coordinator {
 // MARK: - AdsCoordinatorDelegate
 
 extension AdsCoordinator: AdsCoordinatorDelegate {
-  func didSelectAd(_ ad: String) {
+  func didSelectAd(_ ad: ClassifiedAdModel) {
+    print(ad.title)
   }
 }

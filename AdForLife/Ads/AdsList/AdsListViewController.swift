@@ -10,6 +10,12 @@ import UIKit
 
 class AdsListViewController: UIViewController {
   
+  private enum Constants {
+    enum Colors {
+      static let adCategory = UIColor(named: "adCategoryBackground")
+    }
+  }
+  
   private typealias DataSource = UITableViewDiffableDataSource<Int, ClassifiedAdModel>
   private typealias Snapshot = NSDiffableDataSourceSnapshot<Int, ClassifiedAdModel>
   
@@ -18,10 +24,12 @@ class AdsListViewController: UIViewController {
   private var bindings = Set<AnyCancellable>()
   
   private var dataSource: DataSource!
+  var delegate: AdsCoordinatorDelegate?
   
   init(viewModel: AdsListViewModel = AdsListViewModel()) {
     self.viewModel = viewModel
     super.init(nibName: nil, bundle: nil)
+    title = "Classified Ads"
   }
   
   required init?(coder: NSCoder) {
@@ -100,14 +108,40 @@ class AdsListViewController: UIViewController {
         cell?.viewModel = AdCellViewModel(ad: ad)
         return cell
       })
+    dataSource.defaultRowAnimation = .fade
   }
 }
 
 extension AdsListViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
     let category = viewModel.categories[section]
+    let view = UIView()
+    view.backgroundColor = Constants.Colors.adCategory
     let label = UILabel()
     label.text = category.name
-    return label
+    label.translatesAutoresizingMaskIntoConstraints = false
+    view.addSubview(label)
+    
+    NSLayoutConstraint.activate([
+      label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8),
+      label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 8),
+      label.topAnchor.constraint(equalTo: view.topAnchor, constant: 4),
+      label.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 4)
+    ])
+    
+    return view
+  }
+  
+  func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    44
+  }
+  
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    116
+  }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let ad = viewModel.categories[indexPath.section].ads[indexPath.row]
+    delegate?.didSelectAd(ad)
   }
 }

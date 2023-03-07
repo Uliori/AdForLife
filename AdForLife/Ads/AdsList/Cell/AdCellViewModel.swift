@@ -24,16 +24,7 @@ final class AdCellViewModel {
   private func setUpBindings() {
     image = ad.imagesUrl.small
     title = ad.title
-    price = convertCurrency(ad.price)
+    price = PriceFormatter.shared.formatPrice(ad.price)
     isUrgent = ad.isUrgent
-  }
-  
-  private func convertCurrency(_ amount: Float) -> String {
-    let formatter = NumberFormatter()
-    formatter.usesGroupingSeparator = true
-    formatter.locale = Locale.current
-    formatter.numberStyle = .currency
-    formatter.currencyCode = "EUR"
-    return formatter.string(from: NSNumber(value: amount)) ?? ""
   }
 }

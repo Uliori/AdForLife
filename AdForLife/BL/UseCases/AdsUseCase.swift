@@ -30,7 +30,7 @@ final class AdsUseCase: AdsUseCaseProtocol {
         let classifiedAdsEntities = self.convert(classifiedAds: classifiedAds)
         
         let response: [AdCategoryModel] = categoriesEntities.compactMap { category in
-          var ads = classifiedAdsEntities.filter { ad in
+          let ads = classifiedAdsEntities.filter { ad in
             ad.categoryId == category.id
           }
           guard !ads.isEmpty else { return nil }

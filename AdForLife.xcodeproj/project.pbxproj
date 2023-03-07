@@ -34,6 +34,9 @@
 		D369C85D29B79D3E007AACFD /* AdsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C85C29B79D3E007AACFD /* AdsListView.swift */; };
 		D369C86029B79F7B007AACFD /* AdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C85F29B79F7B007AACFD /* AdTableViewCell.swift */; };
 		D369C86229B79F85007AACFD /* AdCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C86129B79F85007AACFD /* AdCellViewModel.swift */; };
+		D369C86429B7A792007AACFD /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D369C86329B7A792007AACFD /* Colors.xcassets */; };
+		D369C86729B7AEE1007AACFD /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C86629B7AEE1007AACFD /* ImageCache.swift */; };
+		D369C86E29B7BC80007AACFD /* PriceFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C86D29B7BC80007AACFD /* PriceFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,9 @@
 		D369C85C29B79D3E007AACFD /* AdsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsListView.swift; sourceTree = "<group>"; };
 		D369C85F29B79F7B007AACFD /* AdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdTableViewCell.swift; sourceTree = "<group>"; };
 		D369C86129B79F85007AACFD /* AdCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCellViewModel.swift; sourceTree = "<group>"; };
+		D369C86329B7A792007AACFD /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		D369C86629B7AEE1007AACFD /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		D369C86D29B7BC80007AACFD /* PriceFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,8 +146,10 @@
 				D369C84429B65DA0007AACFD /* Coordinators */,
 				D369C84C29B666D8007AACFD /* BL */,
 				D369C82E29B64BD7007AACFD /* Ads */,
+				D369C86529B7AED0007AACFD /* DesignSystem */,
 				D369C83229B64ED3007AACFD /* DataProxy */,
 				D369C80729B6492B007AACFD /* Assets.xcassets */,
+				D369C86329B7A792007AACFD /* Colors.xcassets */,
 				D369C80929B6492B007AACFD /* LaunchScreen.storyboard */,
 				D369C80C29B6492B007AACFD /* Info.plist */,
 			);
@@ -270,8 +278,8 @@
 		D369C85329B7921D007AACFD /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				D369C85429B7922D007AACFD /* AdCategory.swift */,
-				D369C85629B79317007AACFD /* ClassifiedAdModel.swift */,
+				D369C86C29B7BC74007AACFD /* PriceFormatter */,
+				D369C86B29B7BC6C007AACFD /* Models */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -283,6 +291,39 @@
 				D369C86129B79F85007AACFD /* AdCellViewModel.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		D369C86529B7AED0007AACFD /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				D369C86829B7AF25007AACFD /* ImageCache */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		D369C86829B7AF25007AACFD /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				D369C86629B7AEE1007AACFD /* ImageCache.swift */,
+			);
+			path = ImageCache;
+			sourceTree = "<group>";
+		};
+		D369C86B29B7BC6C007AACFD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D369C85429B7922D007AACFD /* AdCategory.swift */,
+				D369C85629B79317007AACFD /* ClassifiedAdModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D369C86C29B7BC74007AACFD /* PriceFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				D369C86D29B7BC80007AACFD /* PriceFormatter.swift */,
+			);
+			path = PriceFormatter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +430,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D369C86429B7A792007AACFD /* Colors.xcassets in Resources */,
 				D369C80B29B6492B007AACFD /* LaunchScreen.storyboard in Resources */,
 				D369C80829B6492B007AACFD /* Assets.xcassets in Resources */,
 			);
@@ -430,12 +472,14 @@
 				D369C83C29B6527B007AACFD /* CategoryAPIModel.swift in Sources */,
 				D369C83F29B65449007AACFD /* GetClassifiedAdsService.swift in Sources */,
 				D369C84829B65DFA007AACFD /* Coordinator.swift in Sources */,
+				D369C86729B7AEE1007AACFD /* ImageCache.swift in Sources */,
 				D369C85029B78197007AACFD /* AdsUseCase.swift in Sources */,
 				D369C84129B65588007AACFD /* DataProxyError.swift in Sources */,
 				D369C7FF29B6492A007AACFD /* AppDelegate.swift in Sources */,
 				D369C85B29B79498007AACFD /* ClassifiedAdEntity.swift in Sources */,
 				D369C85529B7922D007AACFD /* AdCategory.swift in Sources */,
 				D369C80129B6492A007AACFD /* SceneDelegate.swift in Sources */,
+				D369C86E29B7BC80007AACFD /* PriceFormatter.swift in Sources */,
 				D369C85729B79317007AACFD /* ClassifiedAdModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
