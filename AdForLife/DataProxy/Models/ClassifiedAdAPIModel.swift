@@ -1,5 +1,5 @@
 //
-//  ClassifiedAdModel.swift
+//  ClassifiedAdAPIModel.swift
 //  AdForLife
 //
 //  Created by El Mehdi KHALLOUKI on 06/03/2023.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct ClassifiedAdImage: Decodable {
+public struct ClassifiedAdImageAPIModel: Decodable {
   var small: URL?
   var thumb: URL?
   
@@ -31,14 +31,14 @@ public struct ClassifiedAdImage: Decodable {
   }
 }
 
-public struct ClassifiedAdModel: Decodable {
+public struct ClassifiedAdAPIModel: Decodable {
   var id: Int
   var title: String
   var categoryId: Int
   var creationDate: Date
   var description: String
   var isUrgent: Bool
-  var imagesUrl: ClassifiedAdImage
+  var imagesUrl: ClassifiedAdImageAPIModel
   var price: Float
   var siret: String?
   
@@ -62,7 +62,7 @@ public struct ClassifiedAdModel: Decodable {
     title = try container.decode(String.self, forKey: .title)
     description = try container.decode(String.self, forKey: .description)
     price = try container.decode(Float.self, forKey: .price)
-    imagesUrl = try container.decode(ClassifiedAdImage.self, forKey: .imagesUrl)
+    imagesUrl = try container.decode(ClassifiedAdImageAPIModel.self, forKey: .imagesUrl)
 
     let dateString = try container.decode(String.self, forKey: .creationDate)
     let dateFormatter = DateFormatter()

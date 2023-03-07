@@ -8,7 +8,7 @@
 import Foundation
 
 public protocol GetClassifiedAdsServiceProtocol {
-  func fetch() async throws -> [ClassifiedAdModel]
+  func fetch() async throws -> [ClassifiedAdAPIModel]
 }
 
 final class GetClassifiedAdsService {
@@ -20,11 +20,11 @@ final class GetClassifiedAdsService {
 
 extension GetClassifiedAdsService: GetClassifiedAdsServiceProtocol {
   
-  func fetch() async throws -> [ClassifiedAdModel] {
+  func fetch() async throws -> [ClassifiedAdAPIModel] {
     guard let url = URL(string: DataProxyConfiguration.listing) else {
       throw DataProxyError.technical
     }
     let (data, _) = try await NetworkHelper.get(url: url)
-    return try JSONDecoder().decode([ClassifiedAdModel].self, from: data)
+    return try JSONDecoder().decode([ClassifiedAdAPIModel].self, from: data)
   }
 }

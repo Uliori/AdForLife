@@ -1,5 +1,5 @@
 //
-//  CategoryModel.swift
+//  CategoryAPIModel.swift
 //  AdForLife
 //
 //  Created by El Mehdi KHALLOUKI on 06/03/2023.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct CategoryModel: Decodable {
+public struct CategoryAPIModel: Decodable {
   var id: Int
   var name: String
 }

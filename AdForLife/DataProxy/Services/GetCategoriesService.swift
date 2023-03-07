@@ -8,7 +8,7 @@
 import Foundation
 
 public protocol GetCategoriesServiceProtocol {
-  func fetch() async throws -> [CategoryModel]
+  func fetch() async throws -> [CategoryAPIModel]
 }
 
 final class GetCategoriesService {
@@ -20,11 +20,11 @@ final class GetCategoriesService {
 
 extension GetCategoriesService: GetCategoriesServiceProtocol {
   
-  func fetch() async throws -> [CategoryModel] {
+  func fetch() async throws -> [CategoryAPIModel] {
     guard let url = URL(string: DataProxyConfiguration.categories) else {
       throw DataProxyError.technical
     }
     let (data, _) = try await NetworkHelper.get(url: url)
-    return try JSONDecoder().decode([CategoryModel].self, from: data)
+    return try JSONDecoder().decode([CategoryAPIModel].self, from: data)
   }
 }
