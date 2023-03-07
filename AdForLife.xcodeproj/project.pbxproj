@@ -37,6 +37,8 @@
 		D369C86429B7A792007AACFD /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D369C86329B7A792007AACFD /* Colors.xcassets */; };
 		D369C86729B7AEE1007AACFD /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C86629B7AEE1007AACFD /* ImageCache.swift */; };
 		D369C86E29B7BC80007AACFD /* PriceFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C86D29B7BC80007AACFD /* PriceFormatter.swift */; };
+		D369C87029B7BE74007AACFD /* AdDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C86F29B7BE74007AACFD /* AdDetailsViewController.swift */; };
+		D369C87229B7BE85007AACFD /* AdDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C87129B7BE85007AACFD /* AdDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		D369C86329B7A792007AACFD /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		D369C86629B7AEE1007AACFD /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		D369C86D29B7BC80007AACFD /* PriceFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceFormatter.swift; sourceTree = "<group>"; };
+		D369C86F29B7BE74007AACFD /* AdDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailsViewController.swift; sourceTree = "<group>"; };
+		D369C87129B7BE85007AACFD /* AdDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +249,8 @@
 		D369C84B29B661DB007AACFD /* AdDetails */ = {
 			isa = PBXGroup;
 			children = (
+				D369C86F29B7BE74007AACFD /* AdDetailsViewController.swift */,
+				D369C87129B7BE85007AACFD /* AdDetailsViewModel.swift */,
 			);
 			path = AdDetails;
 			sourceTree = "<group>";
@@ -471,6 +477,7 @@
 				D369C86229B79F85007AACFD /* AdCellViewModel.swift in Sources */,
 				D369C83C29B6527B007AACFD /* CategoryAPIModel.swift in Sources */,
 				D369C83F29B65449007AACFD /* GetClassifiedAdsService.swift in Sources */,
+				D369C87029B7BE74007AACFD /* AdDetailsViewController.swift in Sources */,
 				D369C84829B65DFA007AACFD /* Coordinator.swift in Sources */,
 				D369C86729B7AEE1007AACFD /* ImageCache.swift in Sources */,
 				D369C85029B78197007AACFD /* AdsUseCase.swift in Sources */,
@@ -478,6 +485,7 @@
 				D369C7FF29B6492A007AACFD /* AppDelegate.swift in Sources */,
 				D369C85B29B79498007AACFD /* ClassifiedAdEntity.swift in Sources */,
 				D369C85529B7922D007AACFD /* AdCategory.swift in Sources */,
+				D369C87229B7BE85007AACFD /* AdDetailsViewModel.swift in Sources */,
 				D369C80129B6492A007AACFD /* SceneDelegate.swift in Sources */,
 				D369C86E29B7BC80007AACFD /* PriceFormatter.swift in Sources */,
 				D369C85729B79317007AACFD /* ClassifiedAdModel.swift in Sources */,

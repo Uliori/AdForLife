@@ -43,6 +43,8 @@ extension AdsCoordinator: Coordinator {
 
 extension AdsCoordinator: AdsCoordinatorDelegate {
   func didSelectAd(_ ad: ClassifiedAdModel) {
-    print(ad.title)
+    let viewModel = AdDetailsViewModel(ad: ad)
+    let adDetailsViewController = AdDetailsViewController(viewModel: viewModel)
+    rootViewController?.pushViewController(adDetailsViewController, animated: true)
   }
 }
