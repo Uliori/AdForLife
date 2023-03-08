@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  AdForLife
+
+  Created by El Mehdi KHALLOUKI on 08/03/2023.
+  
+*/
+
+"adsList.title" = "Liste d'annonces";
+
+"adDetails.title" = "Détails d'annonce";
+"adDetails.price" = "Prix : %@";
+"adDetails.date" = "Créée le : %@";
+"adDetails.siret" = "Siret : %@";
+"adDetails.urgent" = "Annonce urgente";

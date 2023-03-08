@@ -69,7 +69,8 @@ extension AdsUseCase {
                          isUrgent: $0.isUrgent,
                          imagesUrl: ClassifiedAdImageEntity(small: $0.imagesUrl.small,
                                                             thumb: $0.imagesUrl.thumb),
-                         price: $0.price)
+                         price: $0.price,
+                         siret: $0.siret)
     }
   }
   
@@ -83,7 +84,8 @@ extension AdsUseCase {
                         isUrgent: $0.isUrgent,
                         imagesUrl: ClassifiedAdImageModel(small: $0.imagesUrl.small,
                                                           thumb: $0.imagesUrl.thumb),
-                        price: $0.price)
+                        price: $0.price,
+                        siret: $0.siret)
     }
   }
 }

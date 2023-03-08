@@ -24,7 +24,7 @@ final class AdCellViewModel {
   private func setUpBindings() {
     image = ad.imagesUrl.small
     title = ad.title
-    price = PriceFormatter.shared.formatPrice(ad.price)
+    price = AdsPriceFormatter.shared.formatPrice(ad.price)
     isUrgent = ad.isUrgent
   }
 }

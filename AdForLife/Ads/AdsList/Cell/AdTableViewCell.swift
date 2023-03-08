@@ -59,8 +59,8 @@ final class AdTableViewCell: UITableViewCell {
       
       urgentImage.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16.0),
       urgentImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16.0),
-      urgentImage.widthAnchor.constraint(equalToConstant: 24),
-      urgentImage.heightAnchor.constraint(equalToConstant: 24),
+      urgentImage.widthAnchor.constraint(equalToConstant: 28),
+      urgentImage.heightAnchor.constraint(equalToConstant: 28),
     ])
   }
   

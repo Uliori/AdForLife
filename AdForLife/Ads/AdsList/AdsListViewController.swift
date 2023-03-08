@@ -29,7 +29,7 @@ class AdsListViewController: UIViewController {
   init(viewModel: AdsListViewModel = AdsListViewModel()) {
     self.viewModel = viewModel
     super.init(nibName: nil, bundle: nil)
-    title = "Classified Ads"
+    title = L10n.AdsList.title
   }
   
   required init?(coder: NSCoder) {

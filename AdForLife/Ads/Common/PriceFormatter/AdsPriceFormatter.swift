@@ -1,5 +1,5 @@
 //
-//  PriceFormatter.swift
+//  AdsPriceFormatter.swift
 //  AdForLife
 //
 //  Created by El Mehdi KHALLOUKI on 07/03/2023.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-class PriceFormatter {
-  static let shared = PriceFormatter()
+class AdsPriceFormatter {
+  static let shared = AdsPriceFormatter()
   
   func formatPrice(_ amount: Float, currencyCode: String = "EUR") -> String {
     let preferredLanguage = Locale.preferredLanguages.first ?? "fr"
