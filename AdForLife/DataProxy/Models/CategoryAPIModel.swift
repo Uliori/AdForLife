@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct CategoryAPIModel: Decodable {
+public struct CategoryAPIModel: Decodable, Equatable {
   var id: Int
   var name: String
 }

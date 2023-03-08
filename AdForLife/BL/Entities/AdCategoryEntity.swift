@@ -7,6 +7,9 @@
 
 import Foundation
 
+// NOTE(*): In this case, Entities are simple structures that contains no extra business logic.
+//          which is pretty common when most logic is done on the back side.
+
 struct AdCategoryEntity: Equatable, Hashable, Decodable {
   var id: Int
   var name: String

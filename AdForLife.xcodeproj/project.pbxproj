@@ -11,7 +11,6 @@
 		D369C80129B6492A007AACFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C80029B6492A007AACFD /* SceneDelegate.swift */; };
 		D369C80829B6492B007AACFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D369C80729B6492B007AACFD /* Assets.xcassets */; };
 		D369C80B29B6492B007AACFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D369C80929B6492B007AACFD /* LaunchScreen.storyboard */; };
-		D369C81629B6492B007AACFD /* AdForLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C81529B6492B007AACFD /* AdForLifeTests.swift */; };
 		D369C82029B6492B007AACFD /* AdForLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C81F29B6492B007AACFD /* AdForLifeUITests.swift */; };
 		D369C82229B6492B007AACFD /* AdForLifeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C82129B6492B007AACFD /* AdForLifeUITestsLaunchTests.swift */; };
 		D369C83129B64BFE007AACFD /* AdsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C83029B64BFE007AACFD /* AdsListViewController.swift */; };
@@ -27,7 +26,7 @@
 		D369C84A29B65EEE007AACFD /* AdsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C84929B65EEE007AACFD /* AdsCoordinator.swift */; };
 		D369C85029B78197007AACFD /* AdsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C84F29B78197007AACFD /* AdsUseCase.swift */; };
 		D369C85229B78DB7007AACFD /* AdsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C85129B78DB7007AACFD /* AdsListViewModel.swift */; };
-		D369C85529B7922D007AACFD /* AdCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C85429B7922D007AACFD /* AdCategory.swift */; };
+		D369C85529B7922D007AACFD /* AdCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C85429B7922D007AACFD /* AdCategoryModel.swift */; };
 		D369C85729B79317007AACFD /* ClassifiedAdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C85629B79317007AACFD /* ClassifiedAdModel.swift */; };
 		D369C85929B7947D007AACFD /* AdCategoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C85829B7947D007AACFD /* AdCategoryEntity.swift */; };
 		D369C85B29B79498007AACFD /* ClassifiedAdEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C85A29B79498007AACFD /* ClassifiedAdEntity.swift */; };
@@ -42,6 +41,17 @@
 		D369C87529B8C733007AACFD /* AdsDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C87429B8C733007AACFD /* AdsDateFormatter.swift */; };
 		D369C87929B8CB4F007AACFD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D369C87B29B8CB4F007AACFD /* Localizable.strings */; };
 		D369C87F29B8CC42007AACFD /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C87E29B8CC42007AACFD /* L10n.swift */; };
+		D369C88429B8D54A007AACFD /* AdsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C88329B8D54A007AACFD /* AdsUseCaseTests.swift */; };
+		D369C88729B8D695007AACFD /* GetCategoriesServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C88629B8D695007AACFD /* GetCategoriesServiceMock.swift */; };
+		D369C88929B8D7BD007AACFD /* GetClassifiedAdsServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C88829B8D7BD007AACFD /* GetClassifiedAdsServiceMock.swift */; };
+		D369C88B29B8E31A007AACFD /* AdsUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C88A29B8E31A007AACFD /* AdsUseCaseMock.swift */; };
+		D369C88D29B8E3CB007AACFD /* AdsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C88C29B8E3CB007AACFD /* AdsListViewModelTests.swift */; };
+		D369C88F29B8E764007AACFD /* AdDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C88E29B8E764007AACFD /* AdDetailsViewModelTests.swift */; };
+		D369C89129B8E8A5007AACFD /* AdCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C89029B8E8A5007AACFD /* AdCellViewModelTests.swift */; };
+		D369C89329B8ED09007AACFD /* NetworkHelperMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C89229B8ED09007AACFD /* NetworkHelperMock.swift */; };
+		D369C89529B8ED8F007AACFD /* GetCategoriesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C89429B8ED8F007AACFD /* GetCategoriesServiceTests.swift */; };
+		D369C89729B8EDEA007AACFD /* GetClassifiedAdsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C89629B8EDEA007AACFD /* GetClassifiedAdsServiceTests.swift */; };
+		D369C89929B8EE3E007AACFD /* MockSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369C89829B8EE3E007AACFD /* MockSources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +79,6 @@
 		D369C80A29B6492B007AACFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D369C80C29B6492B007AACFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D369C81129B6492B007AACFD /* AdForLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdForLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D369C81529B6492B007AACFD /* AdForLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdForLifeTests.swift; sourceTree = "<group>"; };
 		D369C81B29B6492B007AACFD /* AdForLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdForLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D369C81F29B6492B007AACFD /* AdForLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdForLifeUITests.swift; sourceTree = "<group>"; };
 		D369C82129B6492B007AACFD /* AdForLifeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdForLifeUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -86,7 +95,7 @@
 		D369C84929B65EEE007AACFD /* AdsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsCoordinator.swift; sourceTree = "<group>"; };
 		D369C84F29B78197007AACFD /* AdsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsUseCase.swift; sourceTree = "<group>"; };
 		D369C85129B78DB7007AACFD /* AdsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsListViewModel.swift; sourceTree = "<group>"; };
-		D369C85429B7922D007AACFD /* AdCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCategory.swift; sourceTree = "<group>"; };
+		D369C85429B7922D007AACFD /* AdCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCategoryModel.swift; sourceTree = "<group>"; };
 		D369C85629B79317007AACFD /* ClassifiedAdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAdModel.swift; sourceTree = "<group>"; };
 		D369C85829B7947D007AACFD /* AdCategoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCategoryEntity.swift; sourceTree = "<group>"; };
 		D369C85A29B79498007AACFD /* ClassifiedAdEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAdEntity.swift; sourceTree = "<group>"; };
@@ -103,6 +112,17 @@
 		D369C87A29B8CB4F007AACFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D369C87C29B8CB53007AACFD /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D369C87E29B8CC42007AACFD /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		D369C88329B8D54A007AACFD /* AdsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsUseCaseTests.swift; sourceTree = "<group>"; };
+		D369C88629B8D695007AACFD /* GetCategoriesServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCategoriesServiceMock.swift; sourceTree = "<group>"; };
+		D369C88829B8D7BD007AACFD /* GetClassifiedAdsServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetClassifiedAdsServiceMock.swift; sourceTree = "<group>"; };
+		D369C88A29B8E31A007AACFD /* AdsUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsUseCaseMock.swift; sourceTree = "<group>"; };
+		D369C88C29B8E3CB007AACFD /* AdsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsListViewModelTests.swift; sourceTree = "<group>"; };
+		D369C88E29B8E764007AACFD /* AdDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		D369C89029B8E8A5007AACFD /* AdCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCellViewModelTests.swift; sourceTree = "<group>"; };
+		D369C89229B8ED09007AACFD /* NetworkHelperMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelperMock.swift; sourceTree = "<group>"; };
+		D369C89429B8ED8F007AACFD /* GetCategoriesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCategoriesServiceTests.swift; sourceTree = "<group>"; };
+		D369C89629B8EDEA007AACFD /* GetClassifiedAdsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetClassifiedAdsServiceTests.swift; sourceTree = "<group>"; };
+		D369C89829B8EE3E007AACFD /* MockSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +192,10 @@
 		D369C81429B6492B007AACFD /* AdForLifeTests */ = {
 			isa = PBXGroup;
 			children = (
-				D369C81529B6492B007AACFD /* AdForLifeTests.swift */,
+				D369C88529B8D682007AACFD /* Mocks */,
+				D369C88229B8D51A007AACFD /* Ads */,
+				D369C88129B8D4D0007AACFD /* BL */,
+				D369C88029B8D4C8007AACFD /* DataProxy */,
 			);
 			path = AdForLifeTests;
 			sourceTree = "<group>";
@@ -329,7 +352,7 @@
 		D369C86B29B7BC6C007AACFD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D369C85429B7922D007AACFD /* AdCategory.swift */,
+				D369C85429B7922D007AACFD /* AdCategoryModel.swift */,
 				D369C85629B79317007AACFD /* ClassifiedAdModel.swift */,
 			);
 			path = Models;
@@ -357,6 +380,45 @@
 				D369C87E29B8CC42007AACFD /* L10n.swift */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		D369C88029B8D4C8007AACFD /* DataProxy */ = {
+			isa = PBXGroup;
+			children = (
+				D369C89429B8ED8F007AACFD /* GetCategoriesServiceTests.swift */,
+				D369C89629B8EDEA007AACFD /* GetClassifiedAdsServiceTests.swift */,
+			);
+			path = DataProxy;
+			sourceTree = "<group>";
+		};
+		D369C88129B8D4D0007AACFD /* BL */ = {
+			isa = PBXGroup;
+			children = (
+				D369C88329B8D54A007AACFD /* AdsUseCaseTests.swift */,
+			);
+			path = BL;
+			sourceTree = "<group>";
+		};
+		D369C88229B8D51A007AACFD /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				D369C88C29B8E3CB007AACFD /* AdsListViewModelTests.swift */,
+				D369C88E29B8E764007AACFD /* AdDetailsViewModelTests.swift */,
+				D369C89029B8E8A5007AACFD /* AdCellViewModelTests.swift */,
+			);
+			path = Ads;
+			sourceTree = "<group>";
+		};
+		D369C88529B8D682007AACFD /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				D369C89229B8ED09007AACFD /* NetworkHelperMock.swift */,
+				D369C88629B8D695007AACFD /* GetCategoriesServiceMock.swift */,
+				D369C88829B8D7BD007AACFD /* GetClassifiedAdsServiceMock.swift */,
+				D369C88A29B8E31A007AACFD /* AdsUseCaseMock.swift */,
+				D369C89829B8EE3E007AACFD /* MockSources.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -515,7 +577,7 @@
 				D369C84129B65588007AACFD /* DataProxyError.swift in Sources */,
 				D369C7FF29B6492A007AACFD /* AppDelegate.swift in Sources */,
 				D369C85B29B79498007AACFD /* ClassifiedAdEntity.swift in Sources */,
-				D369C85529B7922D007AACFD /* AdCategory.swift in Sources */,
+				D369C85529B7922D007AACFD /* AdCategoryModel.swift in Sources */,
 				D369C87229B7BE85007AACFD /* AdDetailsViewModel.swift in Sources */,
 				D369C80129B6492A007AACFD /* SceneDelegate.swift in Sources */,
 				D369C86E29B7BC80007AACFD /* AdsPriceFormatter.swift in Sources */,
@@ -527,7 +589,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D369C81629B6492B007AACFD /* AdForLifeTests.swift in Sources */,
+				D369C88F29B8E764007AACFD /* AdDetailsViewModelTests.swift in Sources */,
+				D369C88D29B8E3CB007AACFD /* AdsListViewModelTests.swift in Sources */,
+				D369C89129B8E8A5007AACFD /* AdCellViewModelTests.swift in Sources */,
+				D369C89929B8EE3E007AACFD /* MockSources.swift in Sources */,
+				D369C88729B8D695007AACFD /* GetCategoriesServiceMock.swift in Sources */,
+				D369C88429B8D54A007AACFD /* AdsUseCaseTests.swift in Sources */,
+				D369C89529B8ED8F007AACFD /* GetCategoriesServiceTests.swift in Sources */,
+				D369C89729B8EDEA007AACFD /* GetClassifiedAdsServiceTests.swift in Sources */,
+				D369C88B29B8E31A007AACFD /* AdsUseCaseMock.swift in Sources */,
+				D369C89329B8ED09007AACFD /* NetworkHelperMock.swift in Sources */,
+				D369C88929B8D7BD007AACFD /* GetClassifiedAdsServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

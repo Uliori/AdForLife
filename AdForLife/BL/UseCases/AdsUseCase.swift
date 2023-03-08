@@ -13,15 +13,24 @@ protocol AdsUseCaseProtocol {
 }
 
 final class AdsUseCase: AdsUseCaseProtocol {
+  private let getCategoriesService: GetCategoriesServiceProtocol
+  private let getClassifiedAdsService: GetClassifiedAdsServiceProtocol
+  
+  init(getCategoriesService: GetCategoriesServiceProtocol = GetCategoriesService(),
+       getClassifiedAdsService: GetClassifiedAdsServiceProtocol = GetClassifiedAdsService()) {
+    self.getCategoriesService = getCategoriesService
+    self.getClassifiedAdsService = getClassifiedAdsService
+  }
+  
   func retrieveAds() -> AnyPublisher<[AdCategoryModel], Error> {
     return Future { [weak self] promise in
       guard let self else { return }
       Task {
-        guard let categories = try? await GetCategoriesService().fetch() else {
+        guard let categories = try? await self.getCategoriesService.fetch() else {
           promise(.failure(DataProxyError.network))
           return
         }
-        guard let classifiedAds = try? await GetClassifiedAdsService().fetch() else {
+        guard let classifiedAds = try? await self.getClassifiedAdsService.fetch() else {
           promise(.failure(DataProxyError.network))
           return
         }

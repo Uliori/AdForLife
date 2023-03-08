@@ -12,8 +12,11 @@ public protocol GetClassifiedAdsServiceProtocol {
 }
 
 final class GetClassifiedAdsService {
-
-  init() {}
+  private let networkHelper: NetworkHelperProtocol
+  
+  init(networkHelper: NetworkHelperProtocol = NetworkHelper.shared) {
+    self.networkHelper = networkHelper
+  }
 }
 
 // MARK: - GetClassifiedAdsServiceProtocol
@@ -24,7 +27,7 @@ extension GetClassifiedAdsService: GetClassifiedAdsServiceProtocol {
     guard let url = URL(string: DataProxyConfiguration.listing) else {
       throw DataProxyError.technical
     }
-    let (data, _) = try await NetworkHelper.get(url: url)
+    let (data, _) = try await networkHelper.get(url: url, timeoutInterval: nil)
     return try JSONDecoder().decode([ClassifiedAdAPIModel].self, from: data)
   }
 }

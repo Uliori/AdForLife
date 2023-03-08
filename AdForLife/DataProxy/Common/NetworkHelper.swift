@@ -7,7 +7,12 @@
 
 import Foundation
 
-internal class NetworkHelper {
+protocol NetworkHelperProtocol {
+  func get(url: URL, timeoutInterval: TimeInterval?) async throws -> (Data, URLResponse)
+}
+
+internal class NetworkHelper: NetworkHelperProtocol {
+  static let shared = NetworkHelper()
   
   private enum Constants {
     static let timeout = 30.0
@@ -17,7 +22,7 @@ internal class NetworkHelper {
     }
   }
   
-  internal static func get(
+  internal func get(
     url: URL,
     timeoutInterval: TimeInterval? = nil
   ) async throws -> (Data, URLResponse) {
