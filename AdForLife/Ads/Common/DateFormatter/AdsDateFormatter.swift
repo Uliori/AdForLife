@@ -16,6 +16,7 @@ class AdsDateFormatter {
     
     let formatter = DateFormatter()
     formatter.dateStyle = style
+    formatter.locale = locale
     return formatter.string(from: date)
   }
 }

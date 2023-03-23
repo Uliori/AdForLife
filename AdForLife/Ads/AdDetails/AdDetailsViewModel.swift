@@ -5,18 +5,17 @@
 //  Created by El Mehdi KHALLOUKI on 07/03/2023.
 //
 
-import Combine
 import Foundation
 
 final class AdDetailsViewModel {
-  @Published var title: String?
-  @Published var creationDate: String?
-  @Published var description: String?
-  @Published var isUrgent: Bool?
-  @Published var urgentDescription: String?
-  @Published var imageUrl: URL?
-  @Published var price: String?
-  @Published var siret: String?
+  var title: String?
+  var creationDate: String?
+  var description: String?
+  var isUrgent: Bool?
+  var urgentDescription: String?
+  var imageUrl: URL?
+  var price: String?
+  var siret: String?
   
   private let ad: ClassifiedAdModel
   

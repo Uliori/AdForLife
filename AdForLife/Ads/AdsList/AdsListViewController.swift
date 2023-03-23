@@ -53,7 +53,7 @@ class AdsListViewController: UIViewController {
   
   private func setUpBindings() {
     viewModel.$categories
-      .receive(on: RunLoop.main)
+      .receive(on: DispatchQueue.main)
       .sink(receiveValue: { [weak self] _ in
         self?.updateSections()
       })
@@ -75,7 +75,7 @@ class AdsListViewController: UIViewController {
     }
     
     viewModel.$state
-      .receive(on: RunLoop.main)
+      .receive(on: DispatchQueue.main)
       .sink(receiveValue: stateValueHandler)
       .store(in: &bindings)
   }

@@ -8,10 +8,10 @@
 import Foundation
 
 final class AdCellViewModel {
-  @Published var image: URL?
-  @Published var title: String = ""
-  @Published var price: String = ""
-  @Published var isUrgent: Bool = false
+  var image: URL?
+  var title: String = ""
+  var price: String = ""
+  var isUrgent: Bool = false
   
   private let ad: ClassifiedAdModel
   
